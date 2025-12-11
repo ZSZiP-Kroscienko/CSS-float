@@ -1,0 +1,358 @@
+/* ===== STYL OGÓLNY ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #555;
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #fffacd;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+}
+
+/* ===== SEKCJE ZADAŃ ===== */
+.task {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task.bonus {
+  background: linear-gradient(135deg, #fff9e6 0%, #fff5cc 100%);
+  border-left: 4px solid #ffc107;
+}
+
+/* ===== OPISY ===== */
+.task-description {
+  background-color: #e8f4f8;
+  padding: 12px 15px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  color: #0056b3;
+  font-size: 0.95em;
+}
+
+.task-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 10px 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* ===== ZADANIE 1: float: left ===== */
+.task-1 {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.task-1-image {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 120px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.task-1 p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* ===== ZADANIE 2: float: right ===== */
+.task-2 {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.task-2-image {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 120px;
+  background-color: #28a745;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.task-2 p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* ===== ZADANIE 3: Dwukolumnowy layout ===== */
+.task-3 {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.task-3-sidebar {
+  float: left;
+  width: 25%;
+  background-color: #e8f4f8;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.task-3-sidebar ul {
+  list-style: none;
+}
+
+.task-3-sidebar li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-3-main {
+  float: left;
+  width: 75%;
+  padding: 15px;
+}
+
+/* ===== ZADANIE 4: Galeria ===== */
+.task-4 {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.task-4-item {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.task-4-image {
+  width: 100%;
+  height: 100px;
+  background-color: #dc3545;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ===== ZADANIE 5: Clear ===== */
+.task-5 {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.task-5-floated {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.task-5-cleared {
+  clear: left;
+  background-color: #ffc107;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ===== ZADANIE 6: float: none ===== */
+.task-6 {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.task-6-box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.task-6-float {
+  float: left;
+  width: 30%;
+}
+
+.task-6-none {
+  float: none;
+}
+
+/* ===== ZADANIE 7: float: inherit ===== */
+.task-7-parent {
+  float: left;
+  width: 40%;
+  background-color: #e8f4f8;
+  padding: 15px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.task-7-child {
+  float: inherit;
+  width: 50%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.task-7-parent p {
+  clear: both;
+  margin-top: 10px;
+}
+
+/* ===== BONUS: Zawalenie ===== */
+.task-bonus-broken {
+  background-color: #ffcccc;
+  border: 2px solid red;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.task-bonus-fixed {
+  overflow: hidden;
+  background-color: #ccffcc;
+  border: 2px solid green;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.task-bonus-item {
+  float: left;
+  width: 30%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ===== RESPONSYWNOŚĆ ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .task {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .task-3-sidebar {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 10px;
+  }
+
+  .task-3-main {
+    width: 100%;
+  }
+
+  .task-4-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-4-item {
+    width: 100%;
+  }
+
+  .task-6-float {
+    width: 100%;
+  }
+
+  .task-7-parent {
+    width: 100%;
+  }
+}

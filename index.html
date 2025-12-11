@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float - Demonstracja</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #555;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 8px;
+    }
+
+    .demo-section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .description {
+      background-color: #e8f4f8;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #007bff;
+      border-radius: 3px;
+      color: #0056b3;
+    }
+
+    /* ===== DEMONSTRACJA ===== */
+    .demo-box {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border: 2px dashed #999;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .demo-image {
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .demo-image-left {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+
+    .demo-image-right {
+      float: right;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .demo-image-none {
+      float: none;
+    }
+
+    .code-box {
+      background-color: #f4f4f4;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+      overflow-x: auto;
+    }
+
+    code {
+      background-color: #fffacd;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .note {
+      background-color: #fff3cd;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 4px solid #ffc107;
+      border-radius: 3px;
+    }
+
+    /* ===== PRZYKŁAD: DWUKOLUMNOWY LAYOUT ===== */
+    .layout {
+      overflow: hidden;
+      background-color: white;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar {
+      float: left;
+      width: 25%;
+      background-color: #e8f4f8;
+      padding: 15px;
+      border-right: 1px solid #ddd;
+      min-height: 200px;
+    }
+
+    .main-content {
+      float: left;
+      width: 75%;
+      padding: 15px;
+    }
+
+    /* ===== GALERIA ===== */
+    .gallery {
+      overflow: hidden;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .gallery-item {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Float - Interaktywna Demonstracja</h1>
+
+  <!-- ===== FLOAT: LEFT ===== -->
+  <div class="demo-section">
+    <h2>1. float: left;</h2>
+    <p class="description">
+      Element unosi się na <strong>lewo</strong>, tekst opływa z prawej strony.
+    </p>
+    
+    <div class="demo-box">
+      <div class="demo-image demo-image-left">Image</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+
+    <div class="code-box">
+      <code>.demo-image { float: left; margin-right: 15px; }</code>
+    </div>
+  </div>
+
+  <!-- ===== FLOAT: RIGHT ===== -->
+  <div class="demo-section">
+    <h2>2. float: right;</h2>
+    <p class="description">
+      Element unosi się na <strong>prawo</strong>, tekst opływa z lewej strony.
+    </p>
+    
+    <div class="demo-box">
+      <div class="demo-image demo-image-right">Image</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+
+    <div class="code-box">
+      <code>.demo-image { float: right; margin-left: 15px; }</code>
+    </div>
+  </div>
+
+  <!-- ===== FLOAT: NONE ===== -->
+  <div class="demo-section">
+    <h2>3. float: none;</h2>
+    <p class="description">
+      <strong>Domyślnie.</strong> Element NIE unosi się, jest w normalnym przepływie.
+    </p>
+    
+    <div class="demo-box">
+      <div class="demo-image demo-image-none">Image</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="code-box">
+      <code>.demo-image { float: none; /* Domyślnie */ }</code>
+    </div>
+  </div>
+
+  <!-- ===== FLOAT: INHERIT ===== -->
+  <div class="demo-section">
+    <h2>4. float: inherit;</h2>
+    <p class="description">
+      Element <strong>dziedziczy</strong> wartość float od swojego rodzica.
+    </p>
+    
+    <div class="demo-box" style="float: left; width: 45%; margin-right: 20px;">
+      <p><strong>Parent: float: left</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="demo-box" style="float: left; width: 45%;">
+      <p><strong>Parent: float: none</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="code-box" style="margin-top: 20px;">
+      <code>.parent { float: left; }<br>.child { float: inherit; /* Dziedziczy: left */ }</code>
+    </div>
+  </div>
+
+  <!-- ===== ZAWALENIE KONTENERA ===== -->
+  <div class="demo-section">
+    <h2>5. Problem: Zawalenie Kontenera</h2>
+    <p class="description">
+      Gdy elementy mają float, kontener traci wysokość! Rozwiązanie: <code>overflow: hidden;</code>
+    </p>
+    
+    <h3>❌ BEZ overflow: hidden (zawalony kontener):</h3>
+    <div style="background-color: #ffcccc; border: 2px solid red;">
+      <div style="float: left; width: 30%; background-color: #007bff; color: white; padding: 10px;">Item 1</div>
+      <div style="float: left; width: 30%; margin: 0 5%; background-color: #007bff; color: white; padding: 10px;">Item 2</div>
+      <div style="float: left; width: 30%; background-color: #007bff; color: white; padding: 10px;">Item 3</div>
+      <p style="color: red;">Kontener ma wysokość = 0! (tekst wylatuje poza)</p>
+    </div>
+
+    <h3>✅ Z overflow: hidden (naprawiony):</h3>
+    <div style="overflow: hidden; background-color: #ccffcc; border: 2px solid green;">
+      <div style="float: left; width: 30%; background-color: #007bff; color: white; padding: 10px;">Item 1</div>
+      <div style="float: left; width: 30%; margin: 0 5%; background-color: #007bff; color: white; padding: 10px;">Item 2</div>
+      <div style="float: left; width: 30%; background-color: #007bff; color: white; padding: 10px;">Item 3</div>
+      <p style="color: green;">Kontener ma poprawną wysokość!</p>
+    </div>
+
+    <div class="code-box" style="margin-top: 20px;">
+      <code>.container { overflow: hidden; /* ← Naprawia zawalenie */ }</code>
+    </div>
+  </div>
+
+  <!-- ===== DWUKOLUMNOWY LAYOUT ===== -->
+  <div class="demo-section">
+    <h2>6. Praktyka: Dwukolumnowy Layout</h2>
+    <p class="description">
+      Sidebar z lewej (25%), zawartość z prawej (75%) - bez Flexbox!
+    </p>
+    
+    <div class="layout">
+      <aside class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </aside>
+      <main class="main-content">
+        <h3>Zawartość</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </main>
+    </div>
+
+    <div class="code-box">
+      <code>aside { float: left; width: 25%; }<br>main { float: left; width: 75%; }<br>.layout { overflow: hidden; }</code>
+    </div>
+  </div>
+
+  <!-- ===== GALERIA ===== -->
+  <div class="demo-section">
+    <h2>7. Praktyka: Galeria Obrazów</h2>
+    <p class="description">
+      4 obrazy w jednym wierszu za pomocą float.
+    </p>
+    
+    <div class="gallery">
+      <div class="gallery-item">
+        <div class="gallery-image">Image 1</div>
+        <p>Caption 1</p>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image">Image 2</div>
+        <p>Caption 2</p>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image">Image 3</div>
+        <p>Caption 3</p>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image">Image 4</div>
+        <p>Caption 4</p>
+      </div>
+    </div>
+
+    <div class="code-box" style="margin-top: 20px;">
+      <code>.gallery-item { float: left; width: 25%; }<br>.gallery { overflow: hidden; }</code>
+    </div>
+  </div>
+
+  <!-- ===== CLEAR PROPERTY ===== -->
+  <div class="demo-section">
+    <h2>8. Clear Property - Czyszczenie Float</h2>
+    <p class="description">
+      <code>clear</code> zatrzymuje opływanie tekstu.
+    </p>
+
+    <div class="demo-box">
+      <div style="float: left; width: 40%; background-color: #007bff; color: white; padding: 10px;">Floated Box</div>
+      <p>Tekst opływa ten box...</p>
+      <p>Tekst opływa ten box...</p>
+      <div style="clear: left; background-color: #ffc107; padding: 10px; margin-top: 10px;">Czyszczenie: clear: left; - Tekst już nie opływa!</div>
+    </div>
+
+    <div class="code-box">
+      <code>.clear { clear: left; /* Czyszczenie float left */ }<br>.clear-both { clear: both; /* Czyszczenie obu */ }</code>
+    </div>
+  </div>
+
+  <footer style="text-align: center; margin-top: 40px; color: #999; padding: 20px;">
+    <p>Float to starszy sposób na opływanie. Dzisiaj lepiej użyć Flexbox lub Grid!</p>
+  </footer>
+
+</body>
+</html>

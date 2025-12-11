@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float - Zadania</title>
+  <link rel="stylesheet" href="zadania.css">
+</head>
+<body>
+
+  <h1>Float - Zadania Praktyczne dla Uczniów</h1>
+
+  <!-- ZADANIE 1 -->
+  <div class="task">
+    <h2>Zadanie 1: Obraz z tekstem (float: left)</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Umieść obraz z lewej strony, tekst opływa z prawej.
+      <br><strong>Co użyć:</strong> <code>float: left;</code> + <code>margin-right</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-1">
+        <div class="task-1-image">Zdjęcie</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-1-image {
+  /* DODAJ: float: left; */
+  /* DODAJ: margin-right: 15px; */
+  width: 150px;
+  height: 120px;
+  background-color: #007bff;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 2 -->
+  <div class="task">
+    <h2>Zadanie 2: Obraz z tekstem (float: right)</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Umieść obraz z prawej strony, tekst opływa z lewej.
+      <br><strong>Co użyć:</strong> <code>float: right;</code> + <code>margin-left</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-2">
+        <div class="task-2-image">Zdjęcie</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-2-image {
+  /* DODAJ: float: right; */
+  /* DODAJ: margin-left: 15px; */
+  width: 150px;
+  height: 120px;
+  background-color: #28a745;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 3 -->
+  <div class="task">
+    <h2>Zadanie 3: Dwukolumnowy layout</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Sidebar (25%) z lewej, zawartość (75%) z prawej za pomocą float.
+      <br><strong>Co użyć:</strong> <code>float: left;</code> + <code>width</code> + <code>overflow: hidden;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-3">
+        <aside class="task-3-sidebar">
+          <h3>Sidebar</h3>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+          </ul>
+        </aside>
+        <main class="task-3-main">
+          <h3>Główna zawartość</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </main>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-3 {
+  /* DODAJ: overflow: hidden; */
+  background-color: #f0f0f0;
+}
+
+.task-3-sidebar {
+  /* DODAJ: float: left; */
+  /* DODAJ: width: 25%; */
+  background-color: #e8f4f8;
+  padding: 15px;
+}
+
+.task-3-main {
+  /* DODAJ: float: left; */
+  /* DODAJ: width: 75%; */
+  padding: 15px;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 4 -->
+  <div class="task">
+    <h2>Zadanie 4: Galeria 4 kolumnowa</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> 4 obrazy w jednym wierszu za pomocą float.
+      <br><strong>Co użyć:</strong> <code>float: left;</code> + <code>width: 25%;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-4">
+        <div class="task-4-item">
+          <div class="task-4-image">Img 1</div>
+          <p>Caption 1</p>
+        </div>
+        <div class="task-4-item">
+          <div class="task-4-image">Img 2</div>
+          <p>Caption 2</p>
+        </div>
+        <div class="task-4-item">
+          <div class="task-4-image">Img 3</div>
+          <p>Caption 3</p>
+        </div>
+        <div class="task-4-item">
+          <div class="task-4-image">Img 4</div>
+          <p>Caption 4</p>
+        </div>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-4 {
+  /* DODAJ: overflow: hidden; */
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.task-4-item {
+  /* DODAJ: float: left; */
+  /* DODAJ: width: 25%; */
+  /* DODAJ: padding: 10px; */
+  text-align: center;
+}
+
+.task-4-image {
+  width: 100%;
+  height: 100px;
+  background-color: #dc3545;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 5 -->
+  <div class="task">
+    <h2>Zadanie 5: Clear - Zatrzymanie opływania</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Zatrzymaj tekst przed opływaniem unoszącego się elementu.
+      <br><strong>Co użyć:</strong> <code>clear: left;</code> lub <code>clear: both;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-5">
+        <div class="task-5-floated">Unoszący się element</div>
+        <p>Tekst opływa element...</p>
+        <p>Tekst opływa element...</p>
+        <div class="task-5-cleared">To już nie opływa!</div>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-5-floated {
+  /* DODAJ: float: left; */
+  width: 150px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.task-5-cleared {
+  /* DODAJ: clear: left; */
+  /* lub: clear: both; */
+  background-color: #ffc107;
+  padding: 10px;
+  margin-top: 10px;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 6 -->
+  <div class="task">
+    <h2>Zadanie 6: Float: none (Brak opływania)</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Zmień float: none na elementy, które powinny być normalne.
+      <br><strong>Co użyć:</strong> <code>float: none;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-6">
+        <div class="task-6-box task-6-float">Box 1 (float: left)</div>
+        <div class="task-6-box task-6-none">Box 2 (float: none)</div>
+        <div class="task-6-box task-6-none">Box 3 (float: none)</div>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-6-box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+}
+
+.task-6-float {
+  /* DODAJ: float: left; */
+  width: 30%;
+}
+
+.task-6-none {
+  /* DODAJ: float: none; */
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- ZADANIE 7 -->
+  <div class="task">
+    <h2>Zadanie 7: Float: inherit (Dziedziczenie)</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Element dziedziczy float od rodzica.
+      <br><strong>Co użyć:</strong> <code>float: inherit;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>Twój rezultat (podgląd):</h3>
+      <div class="task-7-parent">
+        <div class="task-7-child">Dziedziczy float</div>
+        <p>Tekst opływa dziecko (bo dziedziczy float z rodzica)</p>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-7-parent {
+  /* DODAJ: float: left; */
+  width: 40%;
+  background-color: #e8f4f8;
+  padding: 15px;
+  border: 2px solid #007bff;
+}
+
+.task-7-child {
+  /* DODAJ: float: inherit; */
+  width: 50%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+</code></pre>
+    </div>
+  </div>
+
+  <!-- BONUS -->
+  <div class="task bonus">
+    <h2>🎁 Bonus: Zawalenie Kontenera</h2>
+    
+    <p class="task-description">
+      <strong>Cel:</strong> Napraw zawalony kontener (elementy z float).
+      <br><strong>Co użyć:</strong> <code>overflow: hidden;</code> lub <code>clear: both;</code>
+    </p>
+
+    <div class="task-container">
+      <h3>❌ ZAWALONY kontener (bez overflow):</h3>
+      <div class="task-bonus-broken" style="background-color: #ffcccc; border: 2px solid red;">
+        <div class="task-bonus-item">Item 1</div>
+        <div class="task-bonus-item">Item 2</div>
+        <div class="task-bonus-item">Item 3</div>
+        <p style="color: red;">Kontener się zwala! (ma wysokość 0)</p>
+      </div>
+
+      <h3>✅ NAPRAWIONY kontener (z overflow: hidden):</h3>
+      <div class="task-bonus-fixed" style="background-color: #ccffcc; border: 2px solid green;">
+        <div class="task-bonus-item">Item 1</div>
+        <div class="task-bonus-item">Item 2</div>
+        <div class="task-bonus-item">Item 3</div>
+        <p style="color: green;">Kontener ma poprawną wysokość!</p>
+      </div>
+
+      <h3>CSS do uzupełnienia:</h3>
+      <pre><code>.task-bonus-broken {
+  /* BEZ tego: */
+  /* background-color, border, padding itp */
+}
+
+.task-bonus-fixed {
+  /* DODAJ: overflow: hidden; */
+  background-color: #ccffcc;
+  border: 2px solid green;
+  padding: 15px;
+}
+
+.task-bonus-item {
+  float: left;
+  width: 30%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-right: 15px;
+}
+</code></pre>
+    </div>
+  </div>
+
+</body>
+</html>

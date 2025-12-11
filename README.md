@@ -3,10 +3,10 @@
 ## Cel zadania
 
 Nauczenie się właściwości **float** do:
-- ✅ Umieszczania obrazów obok tekstu (opływanie)
-- ✅ Tworzenia kolumn bez Flexbox/Grid
-- ✅ Zawijania tekstu wokół elementów
-- ✅ Kontrolowania przepływu treści
+-  Umieszczania obrazów obok tekstu (opływanie)
+-  Tworzenia kolumn bez Flexbox/Grid
+-  Zawijania tekstu wokół elementów
+-  Kontrolowania przepływu treści
 
 ---
 
@@ -227,12 +227,12 @@ main {
 
 ## Kiedy Używać Float?
 
-### ✅ DOBRY POMYSŁ:
+###  DOBRY POMYSŁ:
 - Obraz obok tekstu
 - Opływanie tekstu
 - Starsze layouty (przed Flexbox/Grid)
 
-### ❌ ZŁY POMYSŁ:
+###  ZŁY POMYSŁ:
 - Pełne layouty stron (lepiej Flexbox/Grid)
 - Wyrównywanie (lepiej justify-content)
 - Centrowanie (lepiej margin: auto lub Flexbox)
